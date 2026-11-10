@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header-title">𓆝 𓆟 𓆞 𓆝 𓆟˚˖𓍢ִ໋❀ Student Management ˚˖𓍢ִ໋❀ 𓆝 𓆟 𓆞 𓆝 𓆟<br><br>𓆉 ⎛⎝( ` ᢍ ´ )⎠⎞ 𓆉</h1>
+
+      <form id="studentForm">
+            <div class="form-row">
+                <input type="text" id="nameInput" placeholder="Student Name" required>
+                <input type="email" id="emailInput" placeholder="Email" required>
+                <select id="programSelect" required>
+                    <option value="" disabled selected>Select program </option>
+                    <option value="BSTM">BSTM</option>
+                    <option value="BSIS">BSIS</option>
+                    <option value="BAC">BAC</option>
+                    <option value="BA">BA</option>
+                    <option value="BCED">BCED</option>
+                    <option value="BSENTREP">BSENTREP</option>
+                    <option value="BSAIS">BSAIS</option>
+                    <option value="BSN">BSN</option>
+                    <option value="BSCE">BSCE</option>
+                    <option value="BSCRIM">BSCRIM</option>
+                </select>
+                <button type="submit" id="submitBtn" class="btn-submit">Add Student</button>
+                <button type="button" id="cancelBtn" class="btn-cancel" hidden>Cancel Edit</button>
+            </div>
+        </form>
+
+
+        <div id="message" class="message"></div>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Program</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+
+            </tbody>
+        </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="instructions">
+            <p><strong>Load saved students:</strong> <code>let students = JSON.parse(localStorage.getItem("students")) || []; let editingId = null;</code></p>
+            <p><strong>Save students to browser storage:</strong> <code>function saveStudents() { localStorage.setItem("students", JSON.stringify(students)); }</code></p>
+        </div>
+    </div> -->
